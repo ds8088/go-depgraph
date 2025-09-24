@@ -1,0 +1,17 @@
+*
+!.editorconfig
+!.gitignore
+!.golangci.yml
+!README.md
+!UNLICENSE
+
+!go.mod
+!go.sum
+
+!*.go
+!*/
+!*/*.go
+
+!.github
+!.github/workflows
+!.github/workflows/*.yml
