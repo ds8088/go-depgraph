@@ -37,7 +37,7 @@ import (
 
 func main() {
     // Create a graph and add a bunch of string values.
-    dg := NewDependencyGraph[string]()
+    dg := depgraph.NewDependencyGraph[string]()
     dg.Add("A")
     dg.Add("B", "A")
     dg.Add("C")
@@ -68,7 +68,7 @@ import (
 )
 
 func main() {
-    dg := NewDependencyGraph[string]()
+    dg := depgraph.NewDependencyGraph[string]()
     dg.Add("A")
     dg.Add("B", "A")
     dg.Add("C")
@@ -99,7 +99,7 @@ import (
 )
 
 func main() {
-    dg := NewDependencyGraph[string]()
+    dg := depgraph.NewDependencyGraph[string]()
     dg.Add("A")
     dg.Add("B", "A")
 
@@ -119,7 +119,7 @@ func main() {
     dg.Add("E")
 
     // Resolve the graph once more.
-    res, err := dg.Resolve()
+    res, err = dg.Resolve()
     if err != nil {
         panic(fmt.Errorf("resolving dependency graph, 2nd pass: %w", err))
     }
