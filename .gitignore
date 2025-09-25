@@ -11,6 +11,8 @@
 !*.go
 !*/
 !*/*.go
+!*/*/
+!*/*/*.go
 
 !.github
 !.github/workflows
